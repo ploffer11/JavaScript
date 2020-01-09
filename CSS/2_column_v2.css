@@ -1,0 +1,59 @@
+body {
+    padding: 1em;
+}
+
+.page-header {
+    display: block;
+    background-color: cornsilk;
+}
+
+.content-container {
+    border: 10px solid red;
+}
+
+.content-section {
+    /* float: right; */
+    float: left;
+    padding: 1em;
+    font-size: 1rem;
+    /* root: 16px */
+}
+
+.content-container:after {
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.content-container:before {
+    content: '';
+}
+
+.content-section-a {
+    width: calc(30% - 2em);
+    background-color: yellow;
+}
+
+.content-section-b {
+    width: calc(70% - 2em);
+    background-color: pink;
+}
+
+/* .clear {
+    clear: both;
+} */
+
+.page-footer {
+    /* clear: left; */
+    padding: 1em;
+    background-color: yellowgreen;
+}
+
+.global-menu-link {
+    display: block;
+    margin-bottom: 5px;
+    background-color: aquamarine;
+}
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>React html</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script type="text/babel">
+        `ReactDOM.render(
+            <div>
+                <p>Hello, world!</p>
+            </div>,
+            document.querySelector("#container")
+        );`
+
+        class HelloWorld extends React.Component {
+            render() {
+                return <p>Hello, {this.props.greetTarget}!</p>;
+            }
+        }
+
+        ReactDOM.render(
+            <div>
+                <HelloWorld greetTarget="Batman" />
+                <HelloWorld greetTarget="Iron Man" />
+                <HelloWorld greetTarget="Kim Junho" />
+            </div>,
+            document.querySelector("#container")
+        );
+
+        class Buttonify extends React.Component {
+            render() {
+                return (
+                    <div>
+                        <button type="this.props.behavior">
+                            {this.props.children}
+                        </button>
+                    </div>
+                );
+            }
+        }
+
+        ReactDOM.render(
+            <div>
+                <Buttonify behavior="submit">
+                    SEND DATA
+                </Buttonify>
+            </div>,
+            document.querySelector("#container")
+        );
+
+    </script>
+</body>
+
+</html>

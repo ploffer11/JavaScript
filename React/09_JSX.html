@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>React html</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <style>
+        .container {
+            padding: 50px;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+
+    <script type="text/babel">
+
+        class A extends React.Component {
+            render() {
+                return [
+                    <p>foo</p>,
+                    <p>bar</p>,
+                    <p>zzz</p>
+                ];
+            }
+        }
+
+        class B extends React.Component {
+            render() {
+                return [
+                    <p key="1">foo</p>,
+                    <p key="2">bar</p>,
+                    <p key="3">zzz</p>
+                ];
+            }
+        }
+
+        class C extends React.Component {
+            render() {
+                return (
+                    <React.Fragment>
+                        <p>foo</p>
+                        <p>bar</p>
+                        <p>zzz</p>
+                    </React.Fragment>
+                );
+            }
+        }
+
+        class D extends React.Component {
+            render() {
+                return (
+                    <>
+                        {/* 이건 주석 입니다. */}
+                        <p>foo</p>
+                        <p>bar</p>
+                        <p>zzz</p>
+                    </>
+                );
+            }
+        }
+
+        let temp = <Swatch color="#2F004F"> </Swatch>;
+        ReactDOM.render(
+            <div>
+                {temp}
+            </div>
+            , Document.querySelector(".container")
+        );
+
+
+    </script>
+</body>
+
+</html>

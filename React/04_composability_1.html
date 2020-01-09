@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>React html</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <style>
+        .container {
+            padding: 50px;
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+
+    <script type="text/babel">
+        let destination = document.querySelector(".container");
+
+        class Square extends React.Component {
+            render() {
+                let squareStyle = {
+                    height: 150,
+                    backgroundColor: "#FF6663"
+                };
+                return (
+                    <div style={squareStyle}></div>
+                );
+            }
+        }
+
+        class Label extends React.Component {
+            render() {
+                let labelStyle = {
+                    fontFamily: "sans-serif",
+                    fontWeight: "bold",
+                    padding: 13,
+                    margin: 0
+                }
+                return (
+                    <p style={labelStyle}>#FF6663</p>
+                );
+            }
+        }
+
+        class Card extends React.Component {
+            render() {
+                let cardStyle = {
+                    height: 200,
+                    width: 150,
+                    padding: 0,
+                    backgroundColor: "#FFF",
+                    boxShadow: "0px 0px 5px #666"
+                };
+                return (
+                    <div style={cardStyle}>
+                        <Square />
+                        <Label />
+                    </div>
+                );
+            }
+        }
+
+        ReactDOM.render(
+            <div>
+                <Card />
+            </div>
+            , destination
+        );
+
+    </script>
+</body>
+
+</html>

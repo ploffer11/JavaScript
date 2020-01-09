@@ -1,0 +1,32 @@
+body {
+    padding: 1em
+}
+
+.page-header {
+    display: block;
+    background-color: cornsilk;
+}
+
+.content-section {
+    padding: 1em;
+}
+
+.content-section-a {
+    background-color: yellow;
+}
+
+.content-section-b {
+    background-color: pink;
+}
+
+.page-footer {
+    padding: 1em;
+    background-color: yellowgreen;
+}
+
+.global-menu-link {
+    display: block;
+    margin-bottom: 5px;
+    background-color: aquamarine;
+}
+
