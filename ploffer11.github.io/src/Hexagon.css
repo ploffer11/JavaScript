@@ -1,0 +1,31 @@
+.hexagon a {
+    height: 325px;
+    width: 325px;
+    
+    position: absolute;
+    cursor: pointer;
+    
+    /* background-color: aliceblue; */
+    clip-path: polygon(39px 92px, 39px 236px, 163px 308px, 288px 236px, 288px 235px, 288px 92px, 163px 21px);
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+
+    transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* min-height: 325px; */
+}
+
+.hexagon a:hover {
+    background-color: rgba(104, 230, 171, 0.250);
+    color: white;
+}

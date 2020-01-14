@@ -16,6 +16,37 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "type": "npm",
+            "script": "start",
+            "path": "ipaddress/",
+            "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "start",
+            "path": "todolist/",
+            "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "start",
+            "path": "ploffer11.github.io/",
+            "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "build",
+            "path": "ploffer11.github.io/",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "start",
+            "path": "sliding/",
+            "problemMatcher": []
         }
     ]
 }

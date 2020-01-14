@@ -1,0 +1,23 @@
+#roundButton {
+    background-color: rgb(26, 64, 122);
+    margin-bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 10px solid rgb(116, 192, 240);
+    outline: none;
+    transition: all .2s cubic-bezier(0, 1.26, .8, 1.28);
+}   
+
+#roundButton:hover {
+    background-color: #96D9FF;
+    cursor: pointer;
+    border-color: #003557;
+    transform: scale(1.5, 1.5);
+}
+
+#roundButton:active {
+    border-color: #003557;
+    background-color: #FFF;
+    transform: scale(0.8, 0.8);
+}
